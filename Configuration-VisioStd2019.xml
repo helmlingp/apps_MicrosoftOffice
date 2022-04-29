@@ -1,0 +1,31 @@
+<Configuration ID="ae5e0510-e51d-4ce9-8a0c-59ebf4e858f1">
+  <Info Description="EUC OCTO Testing" />
+  <Add OfficeClientEdition="64" Channel="PerpetualVL2019" AllowCdnFallback="TRUE">
+    <Product ID="VisioStd2019Volume" PIDKEY="7TQNQ-K3YQQ-3PFH7-CCPPM-X4VQ2">
+      <Language ID="en-us" />
+      <ExcludeApp ID="Groove" />
+    </Product>
+  </Add>
+  <Property Name="SharedComputerLicensing" Value="0" />
+  <Property Name="PinIconsToTaskbar" Value="TRUE" />
+  <Property Name="SCLCacheOverride" Value="0" />
+  <Property Name="AUTOACTIVATE" Value="0" />
+  <Property Name="FORCEAPPSHUTDOWN" Value="TRUE" />
+  <Property Name="DeviceBasedLicensing" Value="0" />
+  <Updates Enabled="TRUE" />
+  <RemoveMSI>
+    <IgnoreProduct ID="InfoPath" />
+    <IgnoreProduct ID="InfoPathR" />
+    <IgnoreProduct ID="PrjPro" />
+    <IgnoreProduct ID="PrjStd" />
+    <IgnoreProduct ID="SharePointDesigner" />
+  </RemoveMSI>
+  <AppSettings>
+    <Setup Name="Company" Value="VMware" />
+    <User Key="software\microsoft\office\16.0\excel\options" Name="defaultformat" Value="51" Type="REG_DWORD" App="excel16" Id="L_SaveExcelfilesas" />
+    <User Key="software\microsoft\office\16.0\powerpoint\options" Name="defaultformat" Value="27" Type="REG_DWORD" App="ppt16" Id="L_SavePowerPointfilesas" />
+    <User Key="software\microsoft\office\16.0\word\options" Name="defaultformat" Value="" Type="REG_SZ" App="word16" Id="L_SaveWordfilesas" />
+  </AppSettings>
+  <Display Level="None" AcceptEULA="TRUE" />
+  <Logging Level="Standard" Path="c:\temp" />
+</Configuration>

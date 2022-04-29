@@ -1,0 +1,6 @@
+<Configuration>
+    <Remove All="TRUE">
+        <Product ID="ProjectStd2019Volume"></Product>
+    </Remove>
+    <Display Level="None" AcceptEULA="TRUE"/>
+</Configuration>
